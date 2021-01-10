@@ -1,5 +1,6 @@
 package com.starter.service;
 
+import com.starter.HandleException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -8,8 +9,9 @@ import java.util.List;
 public class PSRService
 {
     private final List<?> answers = List.of(true, false, new Papaya());
-    private int position = 2;
+    private int position;
 
+    @HandleException
     public boolean isPositive(){
         if (position == answers.size())
             position =0;
@@ -17,6 +19,10 @@ public class PSRService
         Boolean answer = (Boolean) answers.get(position++);
         System.out.println(answer);
         return answer;
+    }
+
+    public boolean isPositive2(){
+        return isPositive();
     }
 
     private class Papaya

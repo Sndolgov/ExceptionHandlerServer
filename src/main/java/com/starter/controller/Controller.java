@@ -17,4 +17,9 @@ public class Controller
     public boolean doTest(){
         return psrService.isPositive();
     }
+
+    @GetMapping("do/test2")
+    public boolean doTest2(){
+        return psrService.isPositive2();
+    }
 }
