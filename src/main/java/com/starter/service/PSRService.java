@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PSRService implements PSR
+public class PSRService
 {
     private final List<?> answers = List.of(true, false, new Papaya());
     private int position = 2;
