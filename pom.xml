@@ -32,6 +32,11 @@
             <artifactId>exception-handler</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.starter</groupId>
+            <artifactId>controller-handler</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
